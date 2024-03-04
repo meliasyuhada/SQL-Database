@@ -1,3 +1,10 @@
+<style>
+    .daftar_isi {
+        border: 2px;
+        color: blue;
+    }
+</style>
+
 <h2> Learning SQL Basic</h2>
 
 <div class="daftar_isi"> 
@@ -73,19 +80,20 @@ DESC table_students;
 <img src="img/desc tables.png" />
 </li>
 <li id="it">
-How to Create Table
+How to Insert Table
 <p>
-<pre>CREATE TABLE table_students (
-    nim int(11) primary key,
-    name char(20) NOT NULL,
-    university char(20) NOT NULL,
-    gender char(11) NOT NULL,
-    age int(3) NOT NULL,
-    nationality char(10) NOT NULL
-    );
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
 </pre>
-
-<img src="img/create table.png" />
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
 </li>
 </ol>
 </div>
