@@ -1,10 +1,3 @@
-<style>
-    .daftar_isi {
-        border: 2px;
-        color: blue;
-    }
-</style>
-
 <h2> Learning SQL Basic</h2>
 
 <div class="daftar_isi"> 
@@ -22,13 +15,28 @@
 <a href="#it">How to Insert Table</a>
 </li>
 <li>
-<a href="">How to Update Table</a>
+<a href="#adc">How to Add Column</a>
 </li>
 <li>
-<a href="">How to Delete Table</a>
+<a href="#dc">How to Drop Column</a>
 </li>
 <li>
-<a href="">How to Show Database and Table</a>
+<a href="#mc">How to Modify Column</a>
+</li>
+<li>
+<a href="#cc">How to Change Column</a>
+</li>
+<li>
+<a href="#ut">How to Update Table</a>
+</li>
+<li>
+<a href="#dt">How to Delete Table</a>
+</li>
+<li>
+<a href="#rt">How to Rename Table</a>
+</li>
+<li>
+<a href="sd">How to Select</a>
 </li>
 <li>
 <a href="">How to Get Data from Table</a>
@@ -81,6 +89,141 @@ DESC table_students;
 </li>
 <li id="it">
 How to Insert Table
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+<li id="adc">
+How to Add Column
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="dc">
+How to Drop Column
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="mc">
+How to Modify Column
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="cc">
+How to Change Column
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="ut">
+How to Update Table
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="dt">
+How to Delete Table
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="rt">
+How to Rename Table
+<p>
+<pre>INSERT INTO table_students VALUES
+    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
+    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
+    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
+    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
+    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
+    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+</pre>
+<img src="img/insert table.png" />
+<pre>select* from table_students;
+</pre>
+<img src="img/select show table.png" />
+</li>
+
+<li id="sd">
+How to Select
 <p>
 <pre>INSERT INTO table_students VALUES
     (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
