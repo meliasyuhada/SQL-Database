@@ -1,4 +1,4 @@
-<h2> Learning SQL Basic</h2>
+<center><h2> Learning SQL Basic</h2></center>
 
 <div class="daftar_isi"> 
 <ol>
