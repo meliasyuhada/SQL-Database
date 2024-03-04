@@ -3,7 +3,7 @@
 <div class="daftar_isi"> 
 <ol>
 <li>
-<a href="">How to Create Database
+<a href="#cd">How to Create Database
 <li>
 <a href="">How to Create Table</a>
 </li>
@@ -33,7 +33,7 @@
 
 <div id="content">
 <ol>
-<li>
+<li id="cd">
 How to Create Database
 <p>CREATE DATABASE learning_sql;</p>
 <img src="img/create_database.png" />
