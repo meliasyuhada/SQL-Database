@@ -106,120 +106,74 @@ How to Insert Table
 <li id="adc">
 How to Add Column
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>
+ALTER TABLE table_students ADD level int(3);
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
+<img src="img/add-colums.png" />
+<pre>desc table_students;
 </pre>
-<img src="img/select show table.png" />
+<img src="img/desc_addc.png" />
 </li>
 
 <li id="dc">
-How to Drop Column
+How to Drop or Delete Column
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>
+ALTER TABLE table_students DROP COLUMN level;
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
+<img src="img/drop-column.png" />
+<pre>desc table_students;
 </pre>
-<img src="img/select show table.png" />
+<img src="img/desc-dc.png" />
 </li>
 
 <li id="mc">
 How to Modify Column
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>ALTER TABLE table_students MODIFY nim BIGINT;
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
+<img src="img/modify-column.png" />
+<pre>desc table_students;
 </pre>
-<img src="img/select show table.png" />
+<img src="img/desc-m.png" />
 </li>
 
 <li id="cc">
 How to Change Column
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>ALTER TABLE table_students CHANGE nationality kebangsaan char(10);
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
+<img src="img/change-column.png" />
+<pre>desc table_students;
 </pre>
-<img src="img/select show table.png" />
+<img src="img/desc-cc.png" />
 </li>
 
 <li id="ut">
 How to Update Table
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>UPDATE peserta SET university = 'Universitas Gajah Mada' WHERE name = 'Xia';
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
-</pre>
-<img src="img/select show table.png" />
-</li>
+<img src="img/update-column.png" />
+<pre>select* from peserta;</pre>
+<img src="img/select-update.png" />
 
-<li id="dt">
-How to Delete Table
-<p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
-</pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
-</pre>
-<img src="img/select show table.png" />
+<pre>UPDATE peserta SET kebangsaan = 'Jakarta' WHERE name = 'Zian Dewi' OR nim = 12344;</pre>
+<img src="img/update2.png" />
+
+<pre>select* from peserta;</pre>
+<img src="img/select-update2.png" />
 </li>
 
 <li id="rt">
 How to Rename Table
 <p>
-<pre>INSERT INTO table_students VALUES
-    (12340, 'Liana', 'Universitas Indonesia', 'Female', 20, 'Indonesia'),
-    (12341, 'Bayu', 'Harvard University', 'Male', 21, 'Amerika Sarikat'),
-    (12342, 'Garman', 'Istanbul University', 'Male', 21, 'India'),
-    (12343, 'Rahel', 'Harvard University', 'Male', 20, 'Amerika Sarikat'),
-    (12344, 'Xia', 'Perak University', 'Female', 20, 'Malaysia'),
-    (12345, 'Zian Dewi', 'Universitas Indonesia', 'Female', 22, 'Korea');
+<pre>ALTER TABLE table_students RENAME TO peserta;
 </pre>
-<img src="img/insert table.png" />
-<pre>select* from table_students;
+<img src="img/rename-table.png" />
+<pre>show tables;
 </pre>
-<img src="img/select show table.png" />
+<img src="img/show-rt.png" />
 </li>
 
 <li id="sd">
