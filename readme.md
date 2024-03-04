@@ -12,10 +12,7 @@
 <a href="#ct">How to Create Table</a>
 </li>
 <li>
-<a href="#st">How to Show Tables</a>
-</li>
-<li>
-<a href="">How to Insert Table</a>
+<a href="#it">How to Insert Table</a>
 </li>
 <li>
 <a href="">How to Update Table</a>
@@ -42,12 +39,12 @@
 <ol>
 <li id="cd">
 How to Create Database
-<p>CREATE DATABASE learning_sql;</p>
+<p><pre>CREATE DATABASE learning_sql;</pre></p>
 <img src="img/create_database.png" />
 </li>
 <li id="sd">
 How to Show Database
-<p>SHOW DATABASES;</p>
+<p><pre>SHOW DATABASES;</pre></p>
 <img src="img/show_database.png" />
 </li>
 <li id="ct">
@@ -63,6 +60,31 @@ How to Create Table
     );
 </pre>
 </p>
+<img src="img/create table.png" />
+
+<pre>
+SHOW TABLES;
+</pre>
+
+<img src="img/show table.png" />
+<pre>
+DESC table_students;
+</pre>
+<img src="img/desc tables.png" />
+</li>
+<li id="it">
+How to Create Table
+<p>
+<pre>CREATE TABLE table_students (
+    nim int(11) primary key,
+    name char(20) NOT NULL,
+    university char(20) NOT NULL,
+    gender char(11) NOT NULL,
+    age int(3) NOT NULL,
+    nationality char(10) NOT NULL
+    );
+</pre>
+
 <img src="img/create table.png" />
 </li>
 </ol>
